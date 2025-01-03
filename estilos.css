@@ -1,0 +1,1250 @@
+/* Estilo para ocultar el contenido de cada servicio */
+.contenido-servicio {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Estilo para mostrar el contenido cuando está expandido */
+.servicio.expandido .contenido-servicio {
+    display: block;
+}
+
+/* Reset básico */
+* {
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo de la landing page */
+  .landing {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay p {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
+}
+  
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+.overlay button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #1da84c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+.overlay button:hover {
+    background-color: #0a4608;
+    transition: background-color 0.3s ease;
+  }
+
+.overlay p {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  /* Estilo del contenido */
+.content {
+    display: none;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+.content p {
+    font-size: 1.2rem;
+  }/*efecto scroll*/
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+p {
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    margin-right: 25px;
+    align-items: center;
+}
+
+.primer-elemento{
+    color:pink
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1%;
+
+}
+
+.lista{
+    display: flex;
+}
+
+a { 
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 5px 5px;
+}
+a:hover {
+    color: #fff; /* Cambia el color al pasar el mouse */
+    background-color: #00A82D; /* Fondo verde detrás del título */
+    border-radius: 5px;
+    padding: 5px 5px;
+    transition: background-color 0.3s ease;
+}
+.titular{
+    text-align: center;
+    margin-top: 200px;
+}
+.titular:hover {
+    color: #00A82D; /* Cambia el color al pasar el mouse */
+}
+h1{
+    font-size: 130px;
+    margin: 0;
+    color: white
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: white;
+    margin-top: -44px
+}
+
+/*boton ingresar en verde*/
+.titular a{
+    font-size: 14px;
+    background: #00A82D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+
+header{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90;
+    margin: auto;
+
+}
+/*--------------------------videos de youtube-------------------------------*/
+/*--------------------------videos de youtube-------------------------------*/
+#video-ancho-completo1,
+#video-ancho-completo2 {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el video 1 (mantiene la altura de la pantalla) */
+#youtube-player1 {
+    position: relative;
+    padding-top: 56.25%; /* Relación de aspecto 16:9 */
+    overflow: hidden;
+}
+
+#youtube-player1 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover; /* Asegura que el video rellene el espacio sin deformarse */
+}
+
+/* Estilo para el video 2 (ocupa todo el ancho y mantiene proporción) */
+#youtube-player2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* Relación de aspecto 16:9 */
+}
+
+#youtube-player2 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+
+
+
+/*Arranca seccion Quienes Somos*/
+
+.titulo-servicios,
+.titulo-clientes,
+.titulo-porque-elegirnos,
+.titulo-sobre-nosotros{
+    display: flex;
+    background-color: #00A82D; /* Fondo verde detrás del título */
+    color: white; /* Color del texto en blanco */
+    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center; /* Centra el texto dentro del contenedor */
+    padding: 0 20px 0 0; /* Espaciado alrededor del texto */
+    width: 50%; /* O el tamaño deseado */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    height: 60px; /* Ajusta la altura según sea necesario */
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    transition: transform 1s; /* Añade la transición aquí */
+    transform-origin: center; /* Mantén el escalado desde el centro */
+}
+
+.titulo-servicios:hover,
+.titulo-clientes:hover,
+.titulo-porque-elegirnos:hover,
+.titulo-sobre-nosotros:hover {
+    transform: scale(1.1); /* Opcional: aumenta ligeramente el tamaño al pasar el mouse */
+    transition: 1s;
+}
+
+.contenedor-quienes-somos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 66px;
+}
+
+.contenedor-parrafo-y-boton{
+    width: 68%;
+}
+
+.contenedor-parrafo-y-boton p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+/*---------------------------------servicios--------------------------------------------------------------*/
+.contenedor-servicios {
+    display: flex; /* Activa flexbox */
+    justify-content: space-between; /* Se asegura de que las cards se distribuyan uniformemente */
+    flex-wrap: wrap; /* Permite que las cards se ajusten a nuevas filas si es necesario */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    gap: 20px; /* Añade espacio entre las cards */
+}
+
+#card-area h2{
+    background-color: green; /* Fondo verde detrás del título */
+    color: white; /* Color del texto en blanco */
+    display: inline-block; /* Hace que el fondo se ajuste al tamaño del texto */
+    padding: 0px 200px 0px 256px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 55px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+.servicio {
+    width: 23%; /* Ajustado para que haya espacio suficiente para 4 cards por fila */
+    padding: 50px 38px 50px 38px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.violeta{
+    background: #00A82D;
+}
+
+.celeste{
+    background: #40a8fa;
+}
+
+.servicio h4 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio img {
+    float: right;
+}
+
+.servicio p{
+    font-size: 18px;
+}
+
+/* Asegurar que se vean bien en pantallas pequeñas */
+@media (max-width: 768px) {
+    .servicio {
+        width: 48%; /* Dos cards por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .servicio {
+        width: 90%; /* Una card por fila en pantallas pequeñas */
+    }
+}
+
+/* Navegación para Owl Carousel */
+.owl-nav {
+    text-align: center;
+}
+
+/*-----------------------------porque elegirnos--------------------------------------------------------------*/
+/* Estilos generales para la sección */
+.contenedor-porque {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 100px;
+    gap: 30px; /* Espacio entre los elementos */
+}
+
+/* Cada item singular */
+.porque-singular-enfoque, .porque-singular-tecnologia, .porque-singular-compromiso {
+    width: 28%;
+    position: relative; /* Necesario para superponer las imágenes */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos dentro */
+}
+
+/* Contenedor de imágenes */
+.imagen-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+}
+
+/* Imagen original */
+.porque-singular-enfoque img,
+.porque-singular-tecnologia img,
+.porque-singular-compromiso img {
+    height: auto;
+    position: absolute; /* Asegúrate de que se superponga al contenedor */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra la imagen */
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+/* Imagen de hover, inicialmente oculta */
+.imagen-cambio-hover {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra la imagen */
+    height: auto;
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+/* Hover sobre la imagen */
+.porque-singular-enfoque:hover .imagen-cambio,
+.porque-singular-tecnologia:hover .imagen-cambio,
+.porque-singular-compromiso:hover .imagen-cambio {
+    opacity: 0; /* Oculta la imagen original */
+}
+
+.porque-singular-enfoque:hover .imagen-cambio-hover,
+.porque-singular-tecnologia:hover .imagen-cambio-hover,
+.porque-singular-compromiso:hover .imagen-cambio-hover {
+    opacity: 1; /* Muestra la imagen de hover */
+}
+.titulo-eleginos {
+    margin-top: 50px;}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+#blog{
+    background: #F9FAFC;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contenedor-publicaciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.publicacion {
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+    padding-bottom: 20px;
+}
+
+#blog img {
+    width: 100%;
+}
+
+#blog h4 {
+    font-size: 23px;
+    margin: 0;
+    padding: 20px 20px 20px 20px;
+}
+
+#blog p {
+    color: #5a6169;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    margin: 0;
+}
+
+#blog a {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.publicacion-segunda img {
+    height: 245px;
+}
+
+.primer-parrafo {
+    padding: 0px 20px 20px 20px !important;
+}
+
+/*---------------------------------------------------------contactanos-------------------------------------------------*/
+#contactanos p{
+    text-align: center;
+    padding: 25px 0 10px 0;
+}
+
+#contactanos h3 {
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#contactanos a {
+    padding: 15px 45px 20px 45px;
+    transition: 1s;
+}
+
+
+#whatsapp a {
+    background: none;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+    width: 70px; /* Ajusta el ancho */
+    height: 70px; /* Ajusta el alto */
+    display: inline-block;
+}
+
+#whatsapp a img {
+    width: 100%; /* Escala la imagen al tamaño del contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+}
+#whatsapp a img:hover {
+    transform: scale(1.1); /* Opcional: aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.menu-icon {
+    display: none;
+
+}
+/*Diseno cards servicios*/
+#card-area {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#card-area body{
+    background: #1e1f21;
+    color: #fff;
+}
+
+#card-area .wrapper{
+    padding: 10px 10%;
+}
+
+#card-area {
+    padding: 50px 0;
+}
+
+#card-area .box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+#card-area .box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+#card-area .box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+#card-area .overlay{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent,#1c1c1c 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+#card-area .overlay h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-family: bebas neue; /*tipografia de las cards*/
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+#card-area .overlay a{
+    margin-top: 10px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+#card-area .boxLhover img{
+    transform: scale(1.2);
+}
+#card-area .box:hover .overlay{
+    height: 100%;
+}
+/*----------------------------------------------CLIENTES--------------------------------------------*/
+#nuestros-clientes {
+    padding-top: 20px; /* Añadir más espacio arriba */
+    padding-bottom: 180px; /* Añadir más espacio abajo */
+}
+
+/* Contenedor general */
+/* Contenedor del carrusel */
+#nuestros-clientes .owl-carousel {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Asegura que todo se alinee verticalmente al eje común */
+    width: 100%;
+    position: relative;
+}
+
+/* Elemento individual del carrusel */
+#nuestros-clientes .owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Altura fija para alinear las imágenes, ajusta según necesites */
+}
+
+/* Estilo de las imágenes */
+#nuestros-clientes .owl-carousel .item img {
+    max-height: 100%; /* Ajusta la altura al contenedor sin desbordarse */
+    max-width: 100%; /* Mantén las imágenes dentro del ancho del contenedor */
+    margin: auto; /* Centra la imagen dentro de su contenedor */
+    object-fit: contain; /* Asegura que las imágenes mantengan su proporción */
+    vertical-align: middle; /* Alinea las imágenes verticalmente al centro */
+}
+
+
+    
+/* Asegurarte de que el carrusel tenga posición relativa para posicionar los botones */
+#nuestros-clientes .owl-carousel {
+    position: relative;
+}
+
+/* Asegurarte de que los botones de navegación se ubiquen debajo de las imágenes */
+#nuestros-clientes .owl-nav {
+    position: absolute;
+    bottom: -40px; /* Ajusta este valor para controlar la distancia desde la parte inferior del carrusel */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center; /* Centra los botones de navegación */
+    width: 100%;
+    z-index: 10; /* Asegúrate de que los botones estén por encima del contenido */
+    margin-bottom: -68px;
+}
+
+/* Estilo de los botones */
+#nuestros-clientes .owl-nav button {
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Efecto de hover para los botones */
+#nuestros-clientes span:hover {
+    color: #1da84c;
+}
+
+span{
+    font-size: 57px;
+    color: black;
+}
+
+#nuestros-clientes .owl-carousel {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea las imágenes verticalmente si es necesario */
+    width: 100%;
+    cursor: grab; /* Cambia el cursor al estilo de "mano" */
+}
+
+/* Asegúrate de que cada elemento del carrusel se alinee correctamente */
+#nuestros-clientes .owl-carousel .item {
+    display: flex;
+    justify-content: center; /* Centra las imágenes dentro de cada item */
+    align-items: center;
+}
+
+/* Asegúrate de que las imágenes se ajusten bien */
+#nuestros-clientes .owl-carousel .item img {
+    width: auto; /* Ajusta el tamaño según la proporción de la imagen */
+    max-width: 100%; /* No permite que las imágenes se desborden */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+/* Añadir un efecto visual al pasar el mouse sobre las imágenes del carrusel */
+#nuestros-clientes .owl-carousel .item img:hover {
+    filter: brightness(1.2); /* Aumenta el brillo de la imagen al pasar el mouse */
+    transition: filter 0.3s ease; /* Suaviza la transición del brillo */
+}
+#nuestros-clientes .owl-carousel:active {
+    cursor: grabbing; /* Estilo mientras se arrastra */
+}
+
+
+
+/*-------------------------------------------------- Diseño del formulario--------------------------------------------- */
+#formulario-de-contacto {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Añade relleno en lugar de margin para pantallas pequeñas */
+    background-image: url('fondo-contacto.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+#formulario-de-contacto form {
+    border-radius: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 1000px; /* Ajuste responsivo */
+    padding: 30px;
+    z-index: 1; /* Asegura que el formulario esté encima del fondo */
+}
+
+#formulario-de-contacto .input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px; /* Espaciado uniforme entre los inputs */
+}
+
+#formulario-de-contacto h3 {
+    color: #ffffff;
+    font-size: 55px;
+    margin-bottom: 55px;
+    text-align: left;
+}
+
+#formulario-de-contacto label {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#formulario-de-contacto input, 
+#formulario-de-contacto textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco con transparencia */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil y transparente */
+    color: #283629; /* Color del texto */
+    outline: none;
+    backdrop-filter: blur(5px); /* Suaviza el fondo detrás del input */
+    font-family: Arial, Helvetica, sans-serif; /* Asegura la misma fuente */
+    font-size: 16px; /* Tamaño de fuente consistente */
+}
+
+#formulario-de-contacto input::placeholder, 
+#formulario-de-contacto textarea::placeholder {
+    color: rgba(40, 54, 41, 0.7); /* Color del placeholder con transparencia */
+    font-family: Arial, Helvetica, sans-serif; /* Asegura la misma fuente */
+    font-size: 14px; /* Tamaño de fuente para los placeholders */
+}
+
+#formulario-de-contacto .btn {
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: #00A82D;
+    cursor: pointer;
+    max-width: 200px;
+    filter: none; /* Anula el efecto de grayscale */
+    position: relative;
+    z-index: 2; /* Eleva el botón sobre el filtro del contenedor */
+    transition: background-color 0.3s ease;
+}
+
+#formulario-de-contacto .btn:hover {
+    background-color: #0a4608;
+}
+#formulario-de-contacto .social-links {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Alinea las imágenes verticalmente */
+    gap: 15px; /* Espaciado entre las imágenes */
+    margin-top: 20px; /* Espacio superior */
+    flex-wrap: nowrap; /* Evita que las imágenes se envuelvan a la siguiente línea */
+    margin-bottom: -15px; /* Ajusta el espacio inferior */
+}
+
+.social-links a img {
+    width: 40px; /* Tamaño de las imágenes */
+    height: 40px; /* Ajusta según necesites */
+    object-fit: contain; /* Asegura que las imágenes mantengan su proporción */
+    transition: transform 0.3s ease; /* Opcional: añade un efecto al interactuar */
+}
+
+.social-links a img:hover {
+    transform: scale(1.1); /* Opcional: aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.social-links a:hover {
+    color: inherit; /* Mantiene el color original del enlace */
+    background-color: transparent; /* Elimina el fondo */
+    border-radius: 0; /* Elimina los bordes redondeados */
+    transition: none; /* Elimina cualquier transición */
+}
+
+#formulario-de-contacto p {
+    align-self: center;
+    margin-bottom: -15px;
+}
+
+
+#contactanos {
+    background-color: #76b28e;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    text-align: center;
+    gap: 0px; /* Espacio entre las imágenes */
+    width: 100%; /* Asegúrate de que el contenedor ocupe el ancho necesario */
+    margin-top: 10px; /* Ajusta para que empiece en la mitad del botón */
+    padding-top: 50px; /* Compensa el espacio visual para el contenido */
+}
+
+#contactanos img {
+    width: 3%; /* Ajusta el tamaño de las imágenes */
+    max-width: 100%; /* Evita que las imágenes excedan su contenedor */
+    justify-content: center;
+    text-align: center;
+}
+
+#contactanos h3 {
+    text-align: center;
+}
+
+
+
+
+@media(max-width:991px){
+    body {
+        background-image: url('video_aerogenerador_sol.mp4');
+        background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+        background-position: center center; /* Centra la imagen en ambas orientaciones */
+        background-attachment: fixed; /* Fija el fondo al hacer scroll (puede causar problemas en algunos dispositivos, prueba sin esta propiedad si tienes problemas) */
+    }
+    
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input {
+        padding: 15px;
+    }
+}
+
+
+
+
+/*---------------------------------------------------Diseno para celulares----------------------------------------------*/
+/*--------------------------------------------------- Diseño para dispositivos móviles (hasta 480px) ----------------------------------------------*/
+@media (max-width: 480px) {
+    body {
+        background-image: url('video_aerogenerador_sol.mp4');
+        background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+        background-position: center center; /* Centra la imagen en ambas orientaciones */
+        background-attachment: fixed; /* Fija el fondo al hacer scroll (puede causar problemas en algunos dispositivos, prueba sin esta propiedad si tienes problemas) */
+    }
+    
+
+    .titular {
+        margin-top: 150px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .contenedor-quienes-somos, 
+    .contenedor-publicaciones {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .servicio, .publicacion {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Menú */
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #00A82D;
+        width: 100%;
+        display: none;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url('menu.png') no-repeat center;
+        cursor: pointer;
+    }
+
+    nav .lista {
+        flex-direction: column;
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .menu-icon.open {
+        background: url('menu.png') no-repeat center;
+    }
+
+    /* Ajustes para imágenes */
+    .servicio img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Formulario de contacto */
+    #formulario-de-contacto {
+        padding: 20px;
+    }
+
+    #formulario-de-contacto form, 
+    #formulario-de-contacto .input-group {
+        width: 100%;
+    }
+
+    #formulario-de-contacto input, 
+    #formulario-de-contacto textarea {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Video de fondo */
+    .background-video {
+        display: none;
+    }
+
+    /* Overlay */
+    .overlay h1 {
+        font-size: 30px;
+    }
+
+    .overlay p {
+        font-size: 14px;
+    }
+}
+
+/*--------------------------------------------------- Diseño para tabletas (700px - 900px) ----------------------------------------------*/
+@media (min-width: 700px) and (max-width: 900px) {
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #00A82D;
+        width: 100%;
+        display: none;
+    }
+
+    nav .lista {
+        flex-direction: column;
+        display: flex;
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+    .servicio {
+        width: 44%;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 25px;
+        margin-right: 30px;
+    }
+
+    .contenedor-quienes-somos {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .contenedor-parrafo-y-boton {
+        width: 85%;
+    }
+
+    .servicio {
+        width: 92%;
+        padding: 50px 38px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        color: #fff;
+    }
+
+    .contenedor-porque {
+        flex-direction: column;
+    }
+
+    .porque-singular {
+        width: 107%;
+        margin: auto;
+    }
+
+    .contenedor-publicaciones {
+        flex-direction: column;
+    }
+
+    .publicacion {
+        width: 101%;
+        margin: auto;
+    }
+}
+/*--------------------------------------------------- Ajustes para "Porque elegirnos" ----------------------------------------------*/
+@media (max-width: 480px) {
+    .contenedor-porque {
+        flex-direction: column;
+        align-items: center; /* Centra los elementos dentro del contenedor */
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+        padding: 20px; /* Añade un poco de espacio alrededor */
+    }
+
+    .porque-singular {
+        width: 90%; /* Ajusta el ancho de cada sección */
+        margin: 10px auto; /* Centra cada sección dentro del contenedor */
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .contenedor-porque {
+        flex-direction: row;
+        justify-content: space-between; /* Distribuye los elementos de forma equitativa */
+        width: 100%;
+        padding: 30px; /* Añade un poco de espacio alrededor */
+    }
+
+    .porque-singular {
+        width: 48%; /* Cada sección ocupa casi la mitad del contenedor */
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustar márgenes y padding */
+    body {
+        padding: 15px;
+    }
+
+    .titular {
+        margin-top: 150px;
+    }
+
+    h1 {
+        font-size: 35px; /* Reducir tamaño de título para mejor ajuste */
+    }
+
+    h2 {
+        font-size: 16px; /* Reducir tamaño de subtítulo */
+    }
+
+    .contenedor-quienes-somos {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .servicio {
+        width: 90%;  /* Aprovechar todo el ancho disponible */
+        margin-bottom: 20px;
+    }
+
+
+
+    .contenedor-publicaciones {
+        flex-direction: column;
+    }
+
+    .publicacion {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+@media (max-width: 480px) {
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #00A82D;
+        width: 100%;
+        display: none;
+    }
+
+    nav.open { /* Clase para abrir el menú */
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url('menu.png') no-repeat center;
+        cursor: pointer;
+    }
+
+    nav .lista {
+        flex-direction: column;
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .menu-icon.open { /* Cuando el menú está abierto */
+        background: url('menu.png') no-repeat center;
+    }
+}
+@media (max-width: 480px) {
+    .servicio img {
+        max-width: 100%;  /* Asegura que las imágenes no se salgan de su contenedor */
+        height: auto;
+    }
+}
+@media (max-width: 480px) {
+    #formulario-de-contacto {
+        padding: 20px;
+    }
+
+    #formulario-de-contacto form {
+        width: 100%;
+    }
+
+    #formulario-de-contacto .input-group {
+        width: 100%;
+    }
+
+    #formulario-de-contacto input,
+    #formulario-de-contacto textarea {
+        width: 100%; /* Asegurarse de que los campos de entrada llenen todo el contenedor */
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .background-video {
+        display: none; /* Ocultar video en dispositivos pequeños */
+    }
+}
+@media (max-width: 480px) {
+    .overlay h1 {
+        font-size: 30px;  /* Reducir tamaño del título */
+    }
+
+    .overlay p {
+        font-size: 14px;  /* Reducir tamaño de texto */
+    }
+}
+
+
+/*ipad*/
+@media (min-width: 700px) and (max-width: 900px) {
+    nav{
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background: #00A82D;
+        width: 100%; /*ocupa todo el ancho*/
+        display: none;
+    }
+
+    nav .lista {
+        flex-direction: column;
+        display: flex;
+    }
+    header {
+        height: 100vh;
+        }
+    .img {
+        width: 50%;
+    }
+
+    .servicio {
+        width: 44%;
+    }
+    .menu-icon {
+        display: block;  /*muestro solo menu de imagen en celulares*/
+        width: 25px;
+        margin-right: 30px;
+    }
+
+    .contenedor-quienes-somos {
+        flex-direction: column;
+        height: 500px;
+    }
+    .contenedor-parrafo-y-boton {
+        width: 85%;
+    }
+
+    .servicio {
+        width: 92%;
+        padding: 50px 38px 50px 38px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        color: #fff;
+    }
+
+    .contenedor-porque{
+        flex-direction: column;
+    }
+
+    .porque-singular{
+        width: 107%;
+        margin: auto;
+    }
+
+    .contenedor-publicaciones {
+        flex-direction: column;
+    }
+
+    .publicacion {
+        width: 101%;
+        margin: auto;
+    }
+
+    }

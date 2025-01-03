@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>YENDO VERDE</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <style>
+        /* Estilo para ocultar el contenido inicial */
+        #main-content {
+            display: none;
+        }
+        #full-description1 {
+            display: none;
+        }
+        #full-description2 {
+            display: none;
+        }
+        /* Estilo del landing */
+        .landing {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <!------------------------------------- Landing Page ------------------------------------------------->
+    <section class="landing">
+        <video autoplay muted loop class="background-video">
+            <source src="video_aerogenerador_sol.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <h1>YENDO VERDE</h1>
+            <button onclick="navigateToContent()">INGRESAR</button>
+            <p>© 2025 Yendo Verde. Sitio creado por MustaDevs.</p>
+        </div>
+    </section>
+
+    <!----------------------------------------- Contenido principal --------------------------------------------->
+    <div id="main-content">
+        <header>
+            <div class="contenedor" id="contenedor">
+                <video autoplay muted loop class="background-video">
+                    <source src="video_bienvenidos.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="menu">
+                    <p> </p>
+                    <img class="menu-icon" src="menu.png">
+                    <nav>
+                        <ul class="lista">
+                            <li class="primer elemento"><a href="#quienes-somos">Nosotros</a></li>
+                            <li><a href="#card-area">Servicios</a></li>
+                            <li><a href="#nuestros-clientes">Nuestros clientes</a></li>
+                            <li><a href="#porque-nos-eligen">¿Por qué elegirnos?</a></li>
+                            <li><a href="#formulario-de-contacto">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="titular">
+                    <h1>YENDO VERDE</h1>
+                    <h2>Consultoría en Ingeniería Ambiental, Seguridad y Energía Sustentable.</h2>
+                </div>
+    
+            </div>
+        </header>
+        <!-- Secciones adicionales -->
+    </section>
+    <section id="quienes-somos">
+        <!------------------------------------NOSOTROS-------------------------------------------- -->
+        <h3 class="titulo-sobre-nosotros">SOBRE NOSOTROS</h3>
+        <div class="contenedor-quienes-somos">
+            <div class="contenedor-parrafo-y-boton">
+                <p>Yendo Verde es una empresa dedicada a brindar soluciones innovadoras 
+                y sostenibles en los ámbitos de Consultoría en Ingeniería Ambiental, Seguridad y Energía Sustentable. </p>
+                <p>Con un equipo de expertos altamente capacitados, trabajamos de la mano con nuestros clientes para optimizar procesos 
+                y garantizar el cumplimiento de normativas ambientales y de seguridad, al mismo tiempo que promovemos el uso responsable 
+                de los recursos energéticos.</p>
+                <p>Nuestra misión es impulsar proyectos que no solo sean eficientes y rentables,
+                sino también responsables con el medio ambiente, contribuyendo al bienestar social y a la transición hacia un futuro más verde y sostenible.</p>
+            </div>
+        </div>
+    <!------------------------------------VIDEO NOSOTROS---------------------------------------------->
+    <section id="video-ancho-completo1">
+        <div id="youtube-player1">
+            <iframe 
+                src="https://www.youtube.com/embed/HIt0FsF_hgE?autoplay=1&mute=1&loop=1&playlist=HIt0FsF_hgE&controls=0&modestbranding=1&rel=0&showinfo=0&vq=highres" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    
+
+
+
+<!------------------------------------SERVICIOS-------------------------------------------- -->
+    <div id="card-area">
+        <h3 class="titulo-servicios">SERVICIOS</h3>
+        <div class="wrapper">
+            <div class="box-area">
+                <div class="box">
+                    <img src="card-drones-copy.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Monitoreo y Relevamientos Ambientales Con Tecnología de Drones</h3>
+                        <button class="view-more" data-title="Monitoreo y Relevamientos Ambientales Con Tecnología de Drones" data-text="El servicio de Monitoreo y Relevamientos Ambientales de Yendo Verde ofrece una solución avanzada para el seguimiento continuo y 
+                        la evaluación detallada de proyectos en terreno, utilizando tecnología de drones. Con este servicio, realizamos monitoreos ambientales 
+                        precisos que incluyen el análisis de la calidad del aire, agua, suelos y la biodiversidad de las áreas involucradas. 
+                        Además, realizamos relevamientos geoespaciales para obtener datos actualizados sobre el avance de obras, permitiendo una visualización completa 
+                        del progreso de los proyectos. Los drones permiten capturar imágenes y videos de alta resolución, lo que facilita el seguimiento y la trazabilidad 
+                        de las actividades en tiempo real, mejorando la eficiencia y la toma de decisiones. 
+                        Este enfoque innovador permite detectar posibles impactos ambientales o desviaciones de manera temprana, 
+                        garantizando un manejo responsable y sostenible de los recursos y asegurando el cumplimiento de las normativas ambientales y de seguridad.">Ver Más</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="card-energias-copy.png" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto de Factibilidad de Energías Limpias</h3>
+                        <button class="view-more" data-title="Proyecto de Factibilidad de Energías Limpias" data-text="Nos especializamos en la realización de Proyectos de Factibilidad de Energías Limpias, brindando un análisis exhaustivo y detallado para la implementación de soluciones sostenibles, como la energía undimotriz y los paneles solares, entre otras fuentes renovables.
+                        Nuestros servicios incluyen:
+                        Evaluación de Viabilidad Técnica y Económica, Análisis Económico y de Rentabilidad, Diseño y Planificación del Proyecto, Evaluación de Regulaciones y Normativas y Monitoreo y Optimización Post-Implementación.">Ver Más</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="card-safety.png" alt="">
+                    <div class="overlay">
+                        <h3>Servicio de Seguridad, Salud e Higiene Industrial</h3>
+                        <button class="view-more" data-title="Servicio de Seguridad, Salud e Higiene Industrial" data-text="En Yendo Verde ofrecemos un servicio integral de seguridad, salud e higiene industrial para garantizar la protección de los empleados y el cumplimiento de las normativas. Nuestro enfoque se basa en una gestión eficiente y personalizada para cada empresa, abordando todas las necesidades en estos ámbitos.
+
+                        ¿Qué ofrecemos?
+                        
+                        -Gestión Integral de Normas ISO.
+                        -Capacitaciones In Company.
+                        -Auditorías.
+                        -Servicio en Campo.
+                        -Investigación de Accidentes.
+        
+                        Nuestro compromiso es crear ambientes de trabajo seguros y saludables, con un enfoque integral que permita a las empresas cumplir con las normativas vigentes, minimizar riesgos y mejorar la calidad de vida laboral.">Ver Más</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="card-aerogenerados-copy.png" alt="">
+                    <div class="overlay">
+                        <h3>Mantenimiento Predictivo, Preventivo y Correctivo de Aerogeneradores</h3>
+                        <button class="view-more" data-title="Mantenimiento Predictivo, Preventivo y Correctivo de Aerogeneradores" data-text="Este servicio está diseñado para garantizar el funcionamiento óptimo y la prolongación de la vida útil de los aerogeneradores, 
+                        maximizando su eficiencia y reduciendo el riesgo de fallos imprevistos. A través del mantenimiento preventivo, realizamos inspecciones regulares y tareas de mantenimiento programadas, asegurando que los componentes 
+                        clave de los aerogeneradores, como las palas, el generador y los sistemas eléctricos, estén en condiciones óptimas.
+                        En cuanto al mantenimiento predictivo, utilizamos tecnología avanzada de monitoreo remoto y sensores para analizar continuamente el desempeño de los equipos, asi como drones de ultima tecnología que poseen visión termica permitiendo observar posibles diferencias de calor adelantandonos a posibles anomalías.
+                        Finalmente, nuestro mantenimiento correctivo responde rápidamente a cualquier fallo o anomalía que pueda presentarse, realizando reparaciones de alta calidad para minimizar el tiempo de inactividad y garantizar la eficiencia operativa.
+                        Este enfoque integral asegura una operación confiable y rentable de los aerogeneradores, optimizando su rendimiento en el tiempo y contribuyendo a una mayor sostenibilidad energética.">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+
+        <!--Hasta aca es primera fila de cards-->
+            <div class="box-area">
+                <div class="box">
+                    <img src="card-eia-copy.png" alt="">
+                    <div class="overlay">
+                        <h3>Estudio de Impacto Ambiental (EIA)</h3>
+                        <button class="view-more" data-title="Estudio de Impacto Ambiental (EIA)" data-text="El Estudio Ambiental ofrecido por Yendo Verde es un servicio integral diseñado para evaluar, gestionar y mitigar los impactos ambientales de proyectos 
+                        y actividades industriales. A través de un enfoque técnico y detallado, realizamos estudios de diagnóstico y monitoreo ambiental que permiten identificar 
+                        posibles riesgos para el medio ambiente, así como proponer soluciones efectivas para su prevención o corrección. 
+                        Nuestro equipo de profesionales expertos en ingeniería ambiental lleva a cabo análisis de suelo, agua, aire y biodiversidad, 
+                        además de elaborar informes que cumplen con las normativas legales vigentes. Este servicio busca garantizar que los proyectos sean sostenibles, 
+                        minimizando su huella ecológica y favoreciendo el cumplimiento de los estándares ambientales locales e internacionales.">Ver Más</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="card-huella-copy.png" alt="">
+                    <div class="overlay">
+                        <h3>Medición de huella de carbono</h3>
+                        <button class="view-more" data-title="Medición de huella de carbono" data-text="El servicio de Medición de Huella de Carbono de Yendo Verde está diseñado para ayudar a las empresas a calcular y comprender 
+                        el impacto que sus actividades generan sobre el cambio climático. A través de un análisis exhaustivo de las emisiones directas e 
+                        indirectas de gases de efecto invernadero, evaluamos el consumo de energía, los procesos productivos, el transporte y otros factores relevantes. 
+                        Nuestro equipo de especialistas certificados internacionalmente utilizan metodologías y herramientas para proporcionar un informe preciso y detallado 
+                        sobre la huella de carbono de la empresa. Con esta información, brindamos recomendaciones estratégicas para reducir las emisiones, 
+                        mejorar la eficiencia energética y adoptar prácticas sostenibles, contribuyendo así a la protección del medio ambiente y al cumplimiento de los compromisos climáticos globales.">Ver Más</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="card-btc.png" alt="">
+                    <div class="overlay">
+                        <h3>Soluciones en minería de bitcoin y gestion energética</h3>
+                        <button class="view-more" data-title="Soluciones en minería de bitcoin y gestion energética" data-text="Yendo Verde ofrece soluciones en minería de bitcoin basandose en dos pilares. El primero consiste en implementar
+                        granjas de minería de Bitcoin utilizando excedentes de energía generados por sus parques eolicos o solares, monetizando recursos no utilizados. El segundo consiste en utilizar el calor residual de dichas granjas de minería para procesos industriales, optimizando costos y sostenibilidad.">Ver Más</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="card-human-resources.png" alt="">
+                    <div class="overlay">
+                        <h3>Selección de Personal, Gestión de Recursos Humanos y Diseño de Páginas Web</h3>
+                        <button class="view-more" data-title="Selección de Personal, Gestión de Recursos Humanos y Diseño de Páginas Web" data-text="En Yendo Verde nos especializamos en conectar talento con oportunidades, ofreciendo soluciones integrales en selección de personal y recursos humanos. Nuestro enfoque combina procesos rigurosos de evaluación con un profundo entendimiento de las necesidades de cada organización, garantizando la incorporación de candidatos idóneos.
+                        Además, brindamos servicios personalizados de gestión de recursos humanos, desde diseño de planes de carrera y evaluación de desempeño hasta asesoría en clima laboral, asegurando el crecimiento y desarrollo del capital humano dentro de tu empresa. Complementando estas soluciones, también brindamos servicios de diseño y mantenimiento de páginas web. Desde la creación de sitios atractivos y funcionales hasta el soporte continuo, ayudamos a las empresas a establecer una sólida presencia en línea que impulse su éxito en el mercado digital.">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+
+    <!-- Estilos -->
+<style>
+    /* General */
+    #card-area body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    #card-area .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    #card-area .service-card {
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        text-align: center;
+    }
+    
+    #card-area button {
+        background: #00A82D;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+  
+    
+    /* Modal */
+    .my-modal {
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .my-modal.opened {
+        display: flex;
+    }
+    
+    .my-modal-content {
+        background: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transform: translateY(-200%);
+        animation: slide-in 0.5s forwards;
+    }
+    .my-modal-content h3{
+        color: rgb(0, 0, 0);
+        margin-top: 0px;
+    }
+    .my-modal-content h4{
+        color: rgb(0, 0, 0);
+    }
+
+    .my-modal-content p{
+        color: rgb(0, 0, 0);
+        margin-bottom: 50px;
+    }
+    
+    .my-modal-content.animate-out {
+        animation: slide-out 0.6s forwards;
+    }
+    
+    button#close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+button#close:hover {
+    color: #00A82D; /* Cambia el color al pasar el mouse */
+}
+
+    
+    /* Animations */
+    @keyframes slide-in {
+        from {
+            transform: translateY(-200%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes slide-out {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-200%);
+        }
+    }
+    </style>
+    
+    <!-- JavaScript -->
+    <script>
+    class Modal {
+        constructor(trigger, options) {
+            this.config = Object.assign(
+                {
+                    modalTitle: "Default Title",
+                    modalText: "Default Text",
+                },
+                options
+            );
+    
+            this.trigger = trigger;
+            this.bindEvents();
+        }
+    
+        bindEvents() {
+            this.trigger.addEventListener("click", this.open.bind(this));
+        }
+    
+        open() {
+            this.render();
+            this.modal = document.querySelector(".my-modal");
+            this.modalContent = document.querySelector(".my-modal-content");
+    
+            this.modal.classList.add("opened");
+            this.modal.addEventListener("click", this.close.bind(this));
+        }
+    
+        close(e) {
+            if (e.target.id === "close" || e.target === this.modal) {
+                this.modalContent.classList.add("animate-out");
+    
+                setTimeout(() => {
+                    this.modalContent.classList.remove("animate-out");
+                    this.modal.classList.remove("opened");
+                    this.modal.remove();
+                }, 600);
+            }
+        }
+    
+        render() {
+            const modalHTML = `
+                <div class="my-modal">
+                    <div class="my-modal-content">
+                        <button id="close">X</button>
+                        <h3>${this.config.modalTitle}</h3>
+                        <p>${this.config.modalText}</p>
+                    </div>
+                </div>`;
+            document.body.insertAdjacentHTML("beforeend", modalHTML);
+        }
+    }
+    
+    document.querySelectorAll(".view-more").forEach((btn) => {
+        new Modal(btn, {
+            modalTitle: btn.dataset.title,
+            modalText: btn.dataset.text,
+        });
+    });
+    </script>
+
+
+<!------------------------------------NUESTROS CLIENTES-------------------------------------------- -->
+    <section id="nuestros-clientes">
+        <div class="contenedor">
+            <h3 class="titulo-clientes">NUESTROS CLIENTES</h3>
+        <div class="owl-carousel">
+            <div><img src="Untitled design2.png"> </div>
+            <div><img src="aluarcopy.png"></div>
+            <div> <img src="vec-logo.jpg"></div>
+            <div> <img src="infa-logo.jpg"></div>
+            <div><img src="3011copy.png"> </div>
+            <div><img src="cabo-logo.jpg"> </div>
+        </div>
+    </div>
+    </section>
+
+<!------------------------------------VIDEO HORMIGONANDO---------------------------------------------->
+<section id="video-ancho-completo2">
+    <div id="youtube-player2">
+        <iframe 
+            src="https://www.youtube.com/embed/mILw00h142E?autoplay=1&mute=1&loop=1&playlist=mILw00h142E&controls=0&modestbranding=1&rel=0&showinfo=0&vq=highres" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+<!------------------------------------PORQUE ELEGIRNOS-------------------------------------------- -->
+<section id="porque-nos-eligen">
+    <div class="contenedor">
+        <h3 class="titulo-porque-elegirnos">¿POR QUÉ NOS ELIGEN?</h3>
+        <div class="contenedor-porque">
+
+            <div class="porque-singular-enfoque">
+                <div class="imagen-wrapper">
+                    <img class="imagen-cambio" src="enfoque2.png" alt="Enfoque Integral y Personalizado">
+                    <img class="imagen-cambio-hover" src="enfoque-verde.png" alt="Imagen de enfoque verde">
+                </div>
+                <h4 class="titulo-eleginos">Enfoque Integral y Personalizado</h4>
+                <p>Ofrecemos soluciones a medida, adaptadas a sus necesidades específicas, con un enfoque integral que abarca desde la consultoría hasta la implementación de tecnologías innovadoras y sostenibles. Ya sea en proyectos de ingeniería ambiental, energías limpias o gestión de recursos, cada servicio está diseñado para maximizar la eficiencia y minimizar el impacto ambiental.</p>
+            </div>
+
+            <div class="porque-singular-tecnologia">
+                <div class="imagen-wrapper">
+                    <img class="imagen-cambio" src="tecnologia2.png" alt="Tecnología de Vanguardia y Metodologías Avanzadas">
+                    <img class="imagen-cambio-hover" src="tecnologia-verde.png" alt="Imagen de tecnología verde">
+                </div>
+                <h4 class="titulo-eleginos">Tecnología de Vanguardia y Metodologías Avanzadas</h4>
+                <p>Yendo Verde se distingue por incorporar las últimas tecnologías y metodologías, como el uso de drones para monitoreo ambiental y sensores para mantenimiento predictivo, garantizando resultados precisos y soluciones innovadoras. Este enfoque nos permite ofrecer a nuestros clientes una ventaja competitiva, optimizando tiempos, costos y recursos.</p>
+            </div>
+
+            <div class="porque-singular-compromiso">
+                <div class="imagen-wrapper">
+                    <img class="imagen-cambio" src="compromiso2.png" alt="Sostenibilidad y Cumplimiento Normativo">
+                    <img class="imagen-cambio-hover" src="compromiso-verde.png" alt="Imagen de compromiso verde">
+                </div>
+                <h4 class="titulo-eleginos">Sostenibilidad y Cumplimiento Normativo</h4>
+                <p>Nos eligen por nuestro firme compromiso con la sostenibilidad y el cumplimiento de las normativas ambientales y de seguridad. Nuestro objetivo es ayudar a nuestros clientes a implementar prácticas responsables que no solo mejoren su rentabilidad, sino que también contribuyan a la preservación del medio ambiente y a la construcción de un futuro más verde y sustentable.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!------------------------------------CONTACTO-------------------------------------------- -->
+    <section id="formulario-de-contacto">
+        <form id="contactForm" action="https://formspree.io/f/xovvpjek" method="POST">
+            <h3>CONTACTO</h3>
+    
+            <div class="input-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Nombre" >
+    
+                <label for="phone">Teléfono</label>
+                <input type="tel" name="phone" id="phone" placeholder="Teléfono" >
+    
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" >
+    
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+    
+                <input class="btn" type="submit" value="Enviar" >
+                
+                <!-- Contenedor para los iconos sociales -->
+                <div class="social-links">
+                    <a href="https://www.instagram.com/yendo.verde/#"><img class="instagram" src="instagram.png" alt="Imagen 1"></a>
+                    <a href="https://www.youtube.com/@yendoverde"><img src="youtube.png" alt="Imagen 2"></a>
+                    <a href="https://www.youtube.com/@yendoverde"><img src="twitter.png" alt="Imagen 3"></a>
+                    <a href="https://www.linkedin.com/company/yendo-verde/"><img src="linkedin.png" alt="Imagen 4"></a>
+                </div>
+    
+                <p>© 2025 Yendo Verde. Sitio creado por MustaDevs.</p>
+    
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/" >
+                <input type="hidden" name="_captcha" value="false">
+            </div>
+        </form>
+
+    </section>
+
+
+    <script>
+        class Modal2 {
+            constructor(options) {
+                this.config = Object.assign(
+                    {
+                        modalTitle: "Default Title",
+                        modalText: "Default Text",
+                    },
+                    options
+                );
+                this.render();
+            }
+        
+            render() {
+                const modalHTML = `
+                    <div class="my-modal2">
+                        <div class="my-modal-content2">
+                            <button id="close">X</button>
+                            <h3>${this.config.modalTitle}</h3>
+                            <p>${this.config.modalText}</p>
+                        </div>
+                    </div>`;
+                document.body.insertAdjacentHTML("beforeend", modalHTML);
+        
+                this.modal = document.querySelector(".my-modal2");
+                this.modalContent = document.querySelector(".my-modal-content2");
+        
+                this.modal.classList.add("opened");
+                this.bindEvents();
+            }
+        
+            bindEvents() {
+                this.modal.addEventListener("click", this.close.bind(this));
+            }
+        
+            close(e) {
+                if (e.target.id === "close" || e.target === this.modal) {
+                    this.modalContent.classList.add("animate-out");
+        
+                    setTimeout(() => {
+                        this.modalContent.classList.remove("animate-out");
+                        this.modal.classList.remove("opened");
+                        this.modal.remove();
+                    }, 600);
+                }
+            }
+        }
+        
+        // Enviar formulario con modal
+        document.getElementById('contactForm').addEventListener('submit', async function (event) {
+            event.preventDefault(); // Evita que se recargue la página
+        
+            const form = event.target;
+            const formData = new FormData(form);
+        
+            try {
+                const response = await fetch('https://formspree.io/f/xovvpjek', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+        
+                if (response.ok) {
+                    new Modal2({
+                        modalTitle: "¡Mensaje enviado exitosamente!",
+                        modalText: "Gracias por tu interés. Yendo Verde se pondrá en contacto con vos a la brevedad.",
+                    });
+                    form.reset(); // Limpia el formulario
+                } else {
+                    new Modal2({
+                        modalTitle: "Error",
+                        modalText: "Hubo un problema al enviar tu mensaje. Inténtalo nuevamente.",
+                    });
+                }
+            } catch (error) {
+                new Modal2({
+                    modalTitle: "Error",
+                    modalText: "Ocurrió un error inesperado. Inténtalo nuevamente.",
+                });
+                console.error('Error:', error);
+            }
+        });
+    </script>
+    
+
+<style>
+    .my-modal2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.my-modal2.opened {
+    opacity: 1;
+    visibility: visible;
+}
+
+.my-modal-content2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.my-modal-content2 button#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-out {
+    animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+</style>
+<!------------------------------------WHATSAPP FIJO-------------------------------------------- -->
+    <section id="whatsapp">
+    <a href="https://wa.me/5402975132690">
+    <img src="whatsapp.png" alt=""></a>
+    </section>
+
+<!------------------------------------JAVASCRIPT PARA CARROUSEL DE CLIENTES-------------------------------------------- -->
+<script src="owlcarousel/jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true, // Activa el autoplay
+        autoplayTimeout: 1500, // Ajusta el tiempo de intervalo entre desplazamientos (en milisegundos)
+        autoplayHoverPause: true, // Pausa el autoplay si el usuario pasa el ratón sobre el carrusel
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    });
+</script>
+
+<div>
+<script>
+    /*jquery para menu desplegable*/
+    $('.menu-icon').click(function(){
+
+    $('header nav').slideToggle();
+
+    })
+</script>
+</div>
+
+
+    <script>
+        function navigateToContent() {
+            // Oculta el landing
+            document.querySelector('.landing').style.display = 'none';
+            // Muestra el contenido principal
+            document.querySelector('#main-content').style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>
